@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+ma2=22
+ if [ $ma2 -gt 25 ] 
+then echo "Mec e 10"
+elif [ $ma2 -lt 10 ]
+then echo "poqre 25"
+elif [ $ma2 -eq 22 ]
+then echo "chisht e"
+else
+ echo "sxal"
+ fi
+
+ma1=$((5+5))
+ if [ $ma1 -eq 10 ]
+then echo "thru"
+else
+echo "false"
+ fi
+

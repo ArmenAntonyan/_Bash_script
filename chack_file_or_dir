@@ -1,18 +1,27 @@
 #!/bin/bash
 
-a=path
+x=path
 
-echo "Enter the file $a: "
-read a
-for x in $a
-do
-if test -d "$a"
+echo "Enter the $x name: "
+
+read path
+
+for x  in $path
+
+  do
+
+  if [ -d "$x" ]
+
 then
-  echo "$a is path <<directory>>" >> path.txt
-elif test -f "$a"
+  echo "$x is path <<directory>>" >> path.txt
+
+  elif [ -f "$x" ]
+
 then
-  echo "$a is file " >> file.txt
+  echo "$x is file " >> file.txt
 else
-  echo "$a is not directory or file" >> error.txt
+
+  echo "$x is not directory or file" >> error.txt
 fi
+
 done 
